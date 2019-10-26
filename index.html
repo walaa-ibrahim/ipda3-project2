@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--bootstrap file css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--google-font-->
+    <link href="https://fonts.googleapis.com/css?family=Cairo:400,600,700&display=swap" rel="stylesheet">
+     <!--fancybox-->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <!--main file css-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>الأسطورة</title>
+</head>
+<body>
+  <!--loading page-->
+  <div class="loading-page">
+    <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+    </div>
+  </div>
+  <!--Main header-->
+  <header class="main-header">
+    <!--background of header-->
+    <video autoplay muted loop id="myVideo">
+      <source src="images/vedio/ostora-vedio.MP4" type="video/mp4">
+    </video>
+    <div class="overlay">
+      <!--navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <!--logo-->
+        <a class="brand1 navbar-brand" href="#"><img src="images/imgs/logo2.png" class="img-fluid" alt="logo-img"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Navbar links-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">الرئيسيه <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">تواصل معنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">من نحن</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mr-right">
+              <li class="nav-item">
+                <a class="nav-link" href="popular-asks.html">الأسئلة الشائعة <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="for-sales.html">المعروض للبيع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">المدونة</a>
+              </li>
+            </ul>        
+        </div><!--End Navbar links-->
+      </nav><!--End Navbar-->
+    </div><!--End overlay-->
+    <!--header title-->
+    <div class="header-title text-center">
+      <h2>شريكك الأمثل لإيجاد سكنك</h2>
+      <button class="btn btn-bg mt-4">ابدأ الآن</button>
+    </div><!--End header title-->
+  </header><!--End Main Header-->
+  <!--our-services section-->
+  <section class="our-services my-md-5">
+    <div class="container">
+      <h3 class="text-center my-3">ما نقدمه لكم</h3>
+      <div class="hr-line mt-1 mb-5 mx-auto"></div>
+      <div class="row my-4">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img class="card-img-top m-auto" src="images/imgs/buy.gif" alt="our-services">
+            <div class="card-body">
+              <a href="services.html"><h6 class="card-title pt-2 pb-1">شراء منازل أو شقق</h6></a>
+              <p class="card-text">يمكنك معنا شراء منزلك الخاص أو شقتك الخاصة بأفضل سعر</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img class="card-img-top m-auto" src="images/imgs/rent.gif" alt="our-services">
+            <div class="card-body">
+              <a href="services.html"><h6 class="card-title pt-2 pb-1">شراء منازل أو شقق</h6></a>
+              <p class="card-text">يمكنك معنا شراء منزلك الخاص أو شقتك الخاصة بأفضل سعر</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img class="card-img-top m-auto" src="images/imgs/fix.gif" alt="our-services">
+            <div class="card-body">
+              <a href="services.html"><h6 class="card-title pt-2 pb-1">شراء منازل أو شقق</h6></a>
+              <p class="card-text">يمكنك معنا شراء منزلك الخاص أو شقتك الخاصة بأفضل سعر</p>
+            </div>
+          </div>
+        </div>
+      </div><!--End row-->
+    </div><!--End container-->
+  </section><!--End our-services-->
+  <!--Our-places-->
+  <section class="our-places text-center pt-md-4 pb-md-5">
+    <div class="container">
+        <h3 class="text-center my-3">أماكن تواجدنا</h3>
+        <div class="hr-line mt-1 mb-5 mx-auto"></div>
+      <div class="row">
+        <div class="col-md-4 mb-5"><img src="images/imgs/giza.gif" alt="our-places-giza"/></div>
+        <div class="col-md-4 mb-5"><img src="images/imgs/cairo.gif" alt="our-places-cairo"/></div>
+        <div class="col-md-4 mb-5"><img src="images/imgs/aswan.gif" alt="our-places-aswan"/></div>
+      </div><!--End row-->
+    </div><!--End container-->
+  </section><!--End our-places-->
+  <!--For-sale section-->
+  <section class="for-sale mt-5 py-5 text-center">
+    <div class="container">
+      <h3 class="text-center my-3">المعروض للبيع حاليا</h3>
+        <div class="hr-line mt-1 mb-5 mx-auto"></div>
+        <!--flip card-->
+        <div class="row">
+          <div class="col-md-4 my-3">
+            <div class="flip-card">
+              <div class="card-front">
+                <img src="images/imgs/sell.gif" class="card-img-top img-fluid" alt="for-sell">
+                <div class="flip-card-body text-right p-3">
+                  <address><i class="fas fa-map-marker"></i><span>القاهرة-النجمع الخامس-شارع التسعين</span></address>
+                  <p><i class="fas fa-money-bill-wave-alt"></i><span> 1.000.000</span></p>
+                  <p><i class="fas fa-lightbulb"></i><span> ايجار</span></p>
+                </div>
+              </div>
+              <div class="card-back">
+                <img src="images/imgs/rent3.png" class="card-img-top" alt="">
+                <div class="flip-card-body text-center pt-5">
+                  <p class="pt-4 text-white"> ايجار</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="flip-card">
+              <div class="card-front">
+                <img src="images/imgs/buy3.gif" class="card-img-top img-fluid" alt="for-sell">
+                <div class="flip-card-body text-right p-3">
+                  <address><i class="fas fa-map-marker"></i><span>القاهرة-النجمع الخامس-شارع التسعين</span></address>
+                  <p><i class="fas fa-money-bill-wave-alt"></i><span> 1.000.000</span></p>
+                  <p><i class="fas fa-lightbulb"></i><span> ايجار</span></p>
+                </div>
+              </div>
+              <div class="card-back">
+                <img src="images/imgs/rent3.png" class="card-img-top" alt="">
+                <div class="flip-card-body text-center pt-5">
+                  <p class="pt-4 text-white"> ايجار</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="flip-card">
+              <div class="card-front">
+                <img src="images/imgs/sell.gif" class="card-img-top img-fluid" alt="for-sell">
+                <div class="flip-card-body text-right p-3">
+                  <address><i class="fas fa-map-marker"></i><span>القاهرة-النجمع الخامس-شارع التسعين</span></address>
+                  <p><i class="fas fa-money-bill-wave-alt"></i><span> 1.000.000</span></p>
+                  <p><i class="fas fa-lightbulb"></i><span> ايجار</span></p>
+                </div>
+              </div>
+              <div class="card-back">
+                <img src="images/imgs/rent3.png" class="card-img-top" alt="">
+                <div class="flip-card-body text-center pt-5">
+                  <p class="pt-4 text-white"> ايجار</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="flip-card">
+              <div class="card-front">
+                <img src="images/imgs/sell.gif" class="card-img-top img-fluid" alt="for-sell">
+                <div class="flip-card-body text-right p-3">
+                  <address><i class="fas fa-map-marker"></i><span>القاهرة-النجمع الخامس-شارع التسعين</span></address>
+                  <p><i class="fas fa-money-bill-wave-alt"></i><span> 1.000.000</span></p>
+                  <p><i class="fas fa-lightbulb"></i><span> ايجار</span></p>
+                </div>
+              </div>
+              <div class="card-back">
+                <img src="images/imgs/rent3.png" class="card-img-top" alt="">
+                <div class="flip-card-body text-center pt-5">
+                  <p class="pt-4 text-white"> ايجار</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="flip-card">
+              <div class="card-front">
+                <img src="images/imgs/buy3.gif" class="card-img-top img-fluid" alt="for-sell">
+                <div class="flip-card-body text-right p-3">
+                  <address><i class="fas fa-map-marker"></i><span>القاهرة-النجمع الخامس-شارع التسعين</span></address>
+                  <p><i class="fas fa-money-bill-wave-alt"></i><span> 1.000.000</span></p>
+                  <p><i class="fas fa-lightbulb"></i><span> ايجار</span></p>
+                </div>
+              </div>
+              <div class="card-back">
+                <img src="images/imgs/rent3.png" class="card-img-top" alt="">
+                <div class="flip-card-body text-center pt-5">
+                  <p class="pt-4 text-white"> ايجار</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="flip-card">
+              <div class="card-front">
+                <img src="images/imgs/sell.gif" class="card-img-top img-fluid" alt="for-sell">
+                <div class="flip-card-body text-right p-3">
+                  <address><i class="fas fa-map-marker"></i><span>القاهرة-النجمع الخامس-شارع التسعين</span></address>
+                  <p><i class="fas fa-money-bill-wave-alt"></i><span> 1.000.000</span></p>
+                  <p><i class="fas fa-lightbulb"></i><span> ايجار</span></p>
+                </div>
+              </div>
+              <div class="card-back">
+                <img src="images/imgs/rent3.png" class="card-img-top" alt="">
+                <div class="flip-card-body text-center pt-5">
+                  <p class="pt-4 text-white"> ايجار</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--End row-->
+        <a href="services.html" class="btn btn-bg my-4">المزيد</a>
+    </div><!--End container-->
+  </section><!--End for-sale-->
+  <!--contact-us section-->
+  <section class="contact-us">
+    <div class="main-contact  text-center py-5">
+      <div class="container">
+        <h3 class="text-center mt-md-2 mb-5">تواصل معنا</h3>
+        <form>
+          <input type="text" class="form-control my-2" placeholder="الأسم">
+          <input type="mail" class="form-control my-2" placeholder="الإيميل">
+          <textarea name="" rows="4" class="form-control my-2" placeholder="محتوى الرسالة"></textarea>
+          <button type="button" class="btn btn-bg my-3" data-toggle="modal" data-target="#contactModel">ارسال</button>
+        </form>
+        <!--Model message-->
+        <div class="modal fade" id="contactModel" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">موقع الأسطورة للعقارات</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center">
+                <p>شكراً لتواصلك معنا سوف يتم التواصل معك فى أقرب وقت</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-bg" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div><!--End Model message-->
+      </div><!--End container-->
+    </div><!--End main-contact-->
+    <div class="offers py-5 text-center">
+      <div class="container">
+        <h3 class="text-center mt-md-2 mb-5">ادخل إيميلك ليصلك كل العروض</h3>
+        <form>
+          <input type="email" name="uEmail" class="form-control" placeholder="الإيميل">
+          <button type="submit" class="btn btn-bg my-3">ارسال</button>
+        </form>
+      </div><!--End container-->
+    </div><!--End offers-->
+  </section><!--End contact-us-->
+  <!--footer section-->
+  <footer class="py-5 text-right">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="images/imgs/footer-logo.png" alt="footer-logo">
+          <p>خدمات الأسطورة تساعدك على بيع وشراء العقارات بسهولة</p>
+          <p>بالإضافة إلى تزويدك بمعلومات أساسية لاتخاذ واحد من أهم القرارات المالية فى حياتك</p>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-4">
+              <h5>خدماتنا</h5>
+              <ul class="list-unstyled">
+                <li><a href="">تقيم عقارى</a></li>
+                <li><a href="">دليل أسعار</a></li>
+                <li><a href="">دليل كومباوند</a></li>
+                <li><a href="">دراسات وأبحاث</a></li>
+                <li><a href="">أعلن عن عقارات</a></li>
+                <li><a href="">مؤشر الأسطورة</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>روابط أخرى</h5>
+              <ul class="list-unstyled">
+                <li><a href="">اشتراكات الشركات</a></li>
+                <li><a href="">تواصل معنا</a></li>
+                <li><a href="">الحكام والشروط</a></li>
+                <li><a href="">أحدث العقارات</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li class="d-inline-block mx-2"><a class="insta" href=""><i class="fab fa-instagram"></i></a></li>
+                <li class="d-inline-block mx-2"><a class="facebook" href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li class="d-inline-block mx-2"><a class="twitter" href=""><i class="fab fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><!--End row-->
+    </div><!--End container-->
+  </footer><!--End footer-->
+  <!--jquery/bootstrap/main file js-->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/rangeslider.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,518 @@
+/*Global style*/
+body{
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    overflow: hidden;
+}
+.hr-line{
+    width: 10%;
+    border:1px solid #F27433;
+}
+.btn-bg:hover{
+    color: #FF604B;
+}
+/*Main Header*/
+.main-header{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+video{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;    
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255,96,75,0.6) ;
+    z-index: 2;
+}
+/*Navbar*/
+.header .navbar{
+    background: transparent;
+}
+.navbar-brand img{
+    width:150px
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+}
+.header .navbar-light .navbar-nav > .active .nav-link,.header .navbar-light .navbar-nav .nav-link:hover{
+    border-bottom: 3px solid #303174;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.82rem;
+    padding-left: 0.82rem;
+    margin: 2px 4px;
+}
+.navbar-toggler{
+    background: #fff;
+}
+/*Header title*/
+.header-title{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    top: 50%;
+    z-index: 444;
+    color: #fff;
+}
+.btn{
+    padding: 7px 35px;
+}
+.btn-bg{
+    background: #303174;
+    color: #fff;
+    border-radius: 30px;
+}
+/*media query of main-header*/
+/*media query of navbar*/
+@media (max-width:991px){
+    .navbar{
+        background: #FF604B;
+    }
+    .navbar-brand img{
+     width:120px
+    }
+   .header .navbar-light .navbar-nav > .active .nav-link,.header .navbar-light .navbar-nav:hover .nav-link{
+        border-bottom: none;
+    }
+    .header-title{
+        top: 60%;
+    }
+ }
+ .bg .nav-item:hover a{
+    border: none;
+}
+@media (min-width: 992px) {
+    .navbar-brand{
+        position: absolute;
+        left: 50%;
+        top:40px;
+        transform: translateX(-50%);
+    }
+    .nav-bg{
+        background: #FF604B;
+        height: 150px;
+    }
+    .brand2{
+        top:-7px
+    }
+    .main-header.about-header .navbar, .main-header.services-header .navbar,
+    .main-header.asks-header .navbar{
+     padding: 2.5rem 1rem;
+    }
+}
+/*our-services*/
+.our-services{
+    overflow: hidden;
+}
+.our-services .card{
+    border: none;
+}
+.our-services .card-img-top{
+    width:17%;
+}
+.our-services .card-title{
+    color: #303174;
+}
+.our-services .card-text {
+    font-size: 14px;
+    color: #888;
+}
+/*our-places*/
+.our-places{
+    overflow: hidden;
+}
+.our-places img{
+    width:40%;
+    transform: rotate(30deg);
+}
+/*for-sales*/
+.for-sale{
+    background-image: url(../images/imgs/subtle-pattern-1.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+.for-sale a{
+    text-decoration: none;
+}
+.flip-card {
+    display: block;
+    position: relative;
+    z-index: 1000;
+    width: 90%;
+    margin:auto;
+    height: 380px;
+    cursor: pointer;
+}
+.flip-card .card-front,
+.flip-card .card-back {
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-transition: -moz-transform 500ms;
+  -o-transition: -o-transform 500ms;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  box-shadow: 2px 1px 8px rgba(69, 76, 82, 0.8);
+  background: #fff;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.flip-card .card-front {
+    -moz-transform: perspective(300) rotateY(0);
+    -webkit-transform: perspective(300) rotateY(0);
+    transform: perspective(300) rotateY(0);
+    z-index: 900;
+    color: #888;
+}
+.flip-card .card-front p{
+    line-height: 1.8;
+}
+  .flip-card .card-back {
+      background: #FF604B;
+    -moz-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    z-index: 800;
+}
+.flip-card .card-back img{
+    width: 60%;
+    margin: auto;
+}
+.flip-card .card-back p{
+    font-size: 20px;
+}
+.flip-card:hover .card-front {
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -moz-transform: perspective(300) rotateY(180deg);
+    -webkit-transform: perspective(300) rotateY(180deg);
+    transform: perspective(300) rotateY(180deg);
+  }
+  .flip-card:hover .card-back {
+    z-index: 950;
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -moz-transform: perspective(300) rotateY(0deg);
+    -webkit-transform: perspective(300) rotateY(0deg);
+    transform: perspective(300) rotateY(0deg);
+  }
+.for-sale i, .items-for-sale i{
+    color: #F27433;
+    padding-left: 10px;
+}
+
+/*Contact-us*/
+.contact-us{
+    overflow: hidden;
+}
+.contact-us h3{
+    color: #fff;
+}
+.main-contact{
+    background-image:url(../images/imgs/contact\ us.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.contact-us form{
+    width: 70%;
+    margin:auto
+}
+.offers{
+    background: #FF604B;
+    overflow: hidden;
+}
+.contact-us .modal{
+    font-size:15px;
+}
+.contact-us .modal h5{
+    font-size:1rem;
+}
+.modal-header .close {
+    padding: 1rem;
+    margin: -1rem 0;
+}
+/*media query of contact*/
+@media (max-width:767px){
+    .contact-us h3{
+        font-size: 1.4rem;
+    }
+    .contact-us form{
+        width: 85%;
+    }
+}
+/*Footer*/
+footer{
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #ff604b 0%, #5f0a87 80%);    
+    overflow: hidden;
+}
+footer img{
+    width: 70%;
+}
+footer p{
+    color: #fff;
+    line-height: 1.7;
+    padding-left: 50px;
+}
+footer h5{
+    color: #333;
+}
+footer ul {
+    padding: 0px;
+    text-align: right;
+    padding-right: 10px;
+}
+footer ul li a{
+    color: #fff;
+    text-decoration: none !important;
+}
+footer ul li{
+    margin-top: 15px;
+}
+footer ul li:hover a{
+    color: #FF604B;
+}
+footer ul li a i{
+    font-size: 21px;
+}
+ul li:hover a.facebook{
+    color: #4267B2;
+}
+ul li:hover a.twitter{
+    color: #1DA1F2;
+}
+/*media query of Footer*/
+@media (max-width:992px){
+    footer p{
+        padding-left: 0;
+        text-align: right;
+    }
+}
+@media (max-width:768px){
+
+    footer img{
+        width: 50%;
+    }
+    footer p{
+        padding-left: 40px;
+    }
+    .list-links{
+        justify-content: flex-start;
+    }
+}
+/*****About bage*****/
+/*main-header about-header navbar*/
+.main-header.about-header .navbar, .main-header.services-header .navbar,
+.main-header.asks-header .navbar{
+    background: #FF604B;
+}
+.main-header.about-header, .main-header.services-header,
+.main-header.asks-header{
+    height: auto;
+}
+/*About section*/
+.about{
+    background-image: url(../images/imgs/about.jpg);
+    overflow: hidden;
+    color: #fff;
+}
+.about p{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 2.2;
+}
+/*our-team section*/
+.our-team{
+    overflow: hidden;
+}
+.our-team .card{
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+}
+.card-text{
+    line-height: 2;
+}
+/*****services bage*****/
+.services-cont{
+    background:linear-gradient(rgba(54,54,54,0.8), rgba(54,54,54,0.8)),url('../images/imgs/service-page_02.jpg');
+    background-size: cover;
+    overflow: hidden;
+    color: #fff;
+}
+.services-cont p{
+    line-height: 2;
+}
+.our-serv img{
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.our-serv img:hover{
+    transform: scale(1.1);
+}
+/*****popular-asks bage*****/
+.accordion .btn-link{
+    color: #FF604B;
+    text-decoration: none;
+}
+.accordion .btn{
+    padding: .375rem .75rem;
+}
+.accordion .card-body{
+    line-height: 1.8;
+}
+/*****for-sale bage*****/
+.items-for-sale{
+    overflow: hidden;
+}
+.page-link{
+    color: #FF604B;
+}
+.items-for-sale .btn-bg{
+    box-shadow:0 5px 10px #aaa;
+}
+.items-for-sale .dropdown-toggle::after{
+    position: relative;
+    right: 20px;
+}
+.items-for-sale .dropdown-item:hover{
+    background: lightblue;
+}
+.items-for-sale .card{
+    border-radius: .8rem;
+}
+.items-for-sale .card .btn{
+    padding: 5px 20px;
+}
+/*****land-mark bage*****/
+.search{
+    background: #CACACA;
+}
+
+#carouselExampleIndicators .img-fluid{
+    height:600px;
+}
+.search .btn{
+    border-radius: 30px;
+    outline: 0;
+}
+.btn-light:hover{
+    background: #303174;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.search .dropdown {
+    position: relative;
+}
+.search .dropdown-toggle::after{
+    position: absolute;
+    left: 5%;
+    top: 18px;
+}
+.land-info i{
+    color: #FF604B;
+    padding-left: 5px;
+}
+.btn-bg2, .btn-outline-dark{
+    border-radius: 15px;
+}
+.btn-bg2{
+    background: #FF604B;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.btn-bg2:hover{
+    color: #303174;
+}
+.btn-outline-dark:hover{
+    background: #303174;
+    border: 1px solid transparent;
+}
+.land-mark-details h5:first-child{
+    border-right:3px solid #FF604B;
+}
+.land-mark-details p{
+    line-height: 1.8;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.land-mark-details ul li{
+    line-height: 1.8;
+    margin:5px 10px;
+}
+/*loading page*/
+.loading-page{
+    position: fixed;
+    top: 0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    background: #FF604B;
+    z-index: 9999;
+}
+.spinner {
+    margin: 200px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;    
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+  }
+  .dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+  @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
