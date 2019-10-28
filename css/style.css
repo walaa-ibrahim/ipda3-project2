@@ -275,7 +275,7 @@ footer p{
     padding-left: 50px;
 }
 footer h5{
-    color: #333;
+    color: #fff;
 }
 footer ul {
     padding: 0px;
@@ -407,10 +407,6 @@ ul li:hover a.twitter{
 /*****land-mark bage*****/
 .search{
     background: #CACACA;
-}
-
-#carouselExampleIndicators .img-fluid{
-    height:600px;
 }
 .search .btn{
     border-radius: 30px;
